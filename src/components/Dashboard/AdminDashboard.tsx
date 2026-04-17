@@ -1,37 +1,55 @@
-import { Users, Shield, Server, FileText, AlertCircle } from "lucide-react";
+import { User } from "../../types";
+import { Shield, Users, Activity, Settings } from "lucide-react";
 
-export default function AdminDashboard() {
-  const adminStats = [
-    { label: "Total Users", value: "1,240", icon: <Users className="text-blue-600" /> },
-    { label: "Schools Enrolled", value: "45", icon: <Server className="text-emerald-600" /> },
-    { label: "API Health", value: "99.9%", icon: <Shield className="text-indigo-600" /> },
-    { label: "Tickets Open", value: "12", icon: <AlertCircle className="text-amber-500" /> },
-  ];
+interface AdminDashboardProps {
+  user: User;
+}
 
+export default function AdminDashboard({ user }: AdminDashboardProps) {
   return (
-    <div className="space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {adminStats.map((stat, idx) => (
-          <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center justify-between">
-            <div>
-              <p className="text-slate-500 text-sm font-medium">{stat.label}</p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-1">{stat.value}</h3>
-            </div>
-            <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center">
-              {stat.icon}
-            </div>
-          </div>
-        ))}
+    <div className="space-y-10">
+      <div className="editorial-header !border-t-0 pt-0">
+        <div>
+           <p className="editorial-meta text-paper-accent">Central Administration</p>
+           <h2 className="editorial-h1">System Controller</h2>
+        </div>
       </div>
 
-      <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 text-center">
-        <div className="max-w-md mx-auto">
-          <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4">
-             <FileText className="text-slate-400" size={32} />
-          </div>
-          <h2 className="text-xl font-bold text-slate-900">User Management System</h2>
-          <p className="text-slate-500 mt-2">The administrator portal allows you to manage school accounts, handle subscriptions, and monitor system-wide grading accuracy across Kenyan counties.</p>
-          <button className="mt-6 bg-slate-900 text-white px-6 py-2 rounded-lg font-medium">Launch User Manager</button>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="editorial-card bg-paper-accent/5">
+          <Shield className="text-paper-accent mb-4" size={32} />
+          <div className="editorial-stat-label">Security Status</div>
+          <div className="editorial-stat-value">Robust</div>
+          <p className="editorial-meta text-xs mt-4">Audit logs captured • JWT Rotation Active</p>
+        </div>
+
+        <div className="editorial-card">
+          <Users className="text-paper-ink mb-4" size={32} />
+          <div className="editorial-stat-label">Enrolled Users</div>
+          <div className="editorial-stat-value">1,240</div>
+          <p className="editorial-meta text-xs mt-4 italic opacity-60">across 12 District Schools</p>
+        </div>
+
+        <div className="editorial-card shadow-xl shadow-paper-accent/5">
+          <Activity className="text-paper-ink mb-4" size={32} />
+          <div className="editorial-stat-label">API Health</div>
+          <div className="editorial-stat-value">99.9%</div>
+          <p className="editorial-meta text-xs mt-4">Response latency: 12ms</p>
+        </div>
+      </div>
+
+      <div className="editorial-card">
+        <div className="editorial-section-title">Global User Registry</div>
+        <div className="text-center py-20 opacity-30 italic font-serif">
+           Admin-level User Management is currently restricted to Terminal Access.
+        </div>
+        <div className="flex justify-center gap-4 border-t border-paper-line pt-6">
+           <button className="flex items-center gap-2 editorial-meta text-[10px] uppercase font-bold text-paper-accent">
+              <Settings size={14} /> System Config
+           </button>
+           <button className="flex items-center gap-2 editorial-meta text-[10px] uppercase font-bold text-paper-ink opacity-60">
+              Audit Logs
+           </button>
         </div>
       </div>
     </div>

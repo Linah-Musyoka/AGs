@@ -48,9 +48,9 @@ export default function App() {
       <Layout user={user} onLogout={handleLogout}>
         <Routes>
           <Route path="/" element={
-            user.role === "Admin" ? <AdminDashboard /> :
+            user.role === "Admin" ? <AdminDashboard user={user} /> :
             user.role === "Teacher" ? <TeacherDashboard /> :
-            <StudentDashboard />
+            <StudentDashboard user={user} />
           } />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

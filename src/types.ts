@@ -9,9 +9,11 @@ export interface User {
   class?: string;
 }
 
+export type QuestionType = "MCQ" | "ShortAnswer" | "Essay";
+
 export interface Question {
   id: string;
-  type: "MCQ" | "ShortAnswer" | "Essay";
+  type: QuestionType;
   text: string;
   correctKey?: string; // For MCQ/ShortAnswer
   rubric: string;

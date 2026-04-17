@@ -24,16 +24,16 @@ export const gradingService = {
     try {
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
-        contents: `You are an experienced Kenyan secondary school teacher (Machakos County curriculum) grading student answers strictly according to the official marking scheme and rubric provided. Be fair, consistent, and objective. Output MUST be valid JSON only.
-
-Short-answer user prompt:
-Question: ${question.text}
-Correct Answer Key: ${question.correctKey}
-Student Answer: ${studentAnswer}
-Maximum Marks: ${question.maxMarks}
-Rubric: ${question.rubric}
-Grade and return ONLY this JSON: {"score": number, "correctness_percentage": number, "feedback": "short sentence", "highlighted_errors": [...], "matched_keywords": [...]}
-`,
+        contents: `You are an experienced Kenyan secondary school teacher (Machakos County curriculum) grading student answers strictly according to the official KNEC marking scheme. Be fair, consistent, and objective. Output MUST be valid JSON only.
++
++Short-answer user prompt:
++Question: ${question.text} (Total: ${question.maxMarks} marks)
++Correct Answer Key: ${question.correctKey}
++Student Answer: ${studentAnswer}
++Rubric: ${question.rubric}
++
++Grade and return ONLY this JSON: {"score": number (0-${question.maxMarks}), "correctness_percentage": number (0-100), "feedback": "precise 1-sentence analysis", "matched_keywords": [...]}
++`,
         config: {
           responseMimeType: "application/json",
           responseSchema: {

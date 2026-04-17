@@ -1,6 +1,6 @@
 {
-  "name": "TextAGS - Automated Grading System",
-  "description": "Professional automated grading system for Kenyan secondary schools featuring AI-assisted essay grading and comprehensive analytics.",
+  "name": "AGS Machakos - Automated Grading System",
+  "description": "High-accuracy automated grading system for Machakos District, featuring AI essay assessment, curriculum alignment, and teacher workload reduction.",
   "requestFramePermissions": [],
   "majorCapabilities": ["AI Grading", "Dashboard Analytics", "PDF Reports", "Role-Based Access"]
 }
