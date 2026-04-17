@@ -1,0 +1,9 @@
+# Project built with Node.js/TypeScript (Express + React)
+# This requirements file is for project documentation compliance.
+express==4.21.2
+google-generativeai==0.8.0
+jsonwebtoken==9.0.2
+recharts==2.12.7
+jspdf==2.5.1
+xlsx==0.18.5
+framer-motion==11.0.0

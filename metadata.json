@@ -1,0 +1,6 @@
+{
+  "name": "TextAGS - Automated Grading System",
+  "description": "Professional automated grading system for Kenyan secondary schools featuring AI-assisted essay grading and comprehensive analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Grading", "Dashboard Analytics", "PDF Reports", "Role-Based Access"]
+}

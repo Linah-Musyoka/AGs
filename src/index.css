@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  
+  --color-paper-bg: #f8fafc;
+  --color-paper-ink: #0f172a;
+  --color-paper-accent: #2563eb;
+  --color-paper-gray: #64748b;
+  --color-paper-line: #e2e8f0;
+}
+
+@layer base {
+  body {
+    @apply bg-paper-bg text-paper-ink font-sans transition-colors duration-300;
+  }
+  
+  h1, h2, h3, .serif {
+    @apply font-serif;
+  }
+}
+
+.editorial-header {
+  @apply border-b-2 border-paper-ink pb-3 flex justify-between items-end mb-8;
+}
+
+.editorial-h1 {
+  @apply font-serif text-4xl italic font-normal tracking-tight;
+}
+
+.editorial-meta {
+  @apply text-[11px] uppercase tracking-wider font-bold;
+}
+
+.editorial-section-title {
+  @apply text-xs uppercase tracking-[0.2em] border-b border-paper-ink pb-1 mb-4 inline-block font-sans font-bold;
+}
+
+.editorial-stat-label {
+  @apply text-[10px] uppercase text-paper-gray tracking-wider font-bold mb-1;
+}
+
+.editorial-stat-value {
+  @apply font-serif text-3xl font-bold;
+}
+
+.editorial-card {
+  @apply bg-white border border-paper-line p-6 relative;
+}
+
+.editorial-card-accent::before {
+  content: '';
+  @apply absolute top-0 left-0 right-0 h-1 bg-paper-accent;
+}
+
+.editorial-table th {
+  @apply text-left text-[11px] uppercase py-3 px-2 border-b border-paper-ink text-paper-gray font-bold;
+}
+
+.editorial-table td {
+  @apply py-4 px-2 border-b border-paper-line text-sm;
+}
+
+.editorial-badge {
+  @apply px-2 py-1 rounded-sm text-[10px] font-bold uppercase;
+}
+
+.editorial-feedback {
+  @apply font-serif italic text-lg leading-relaxed text-slate-700 mt-4 pl-4 border-l-2 border-paper-line;
+}
