@@ -130,7 +130,7 @@ export default function TeacherDashboard() {
   const exportPDF = () => {
     const doc = new jsPDF();
     doc.setFont("helvetica", "bold");
-    doc.text("AGS MACHAKOS - AUDIT REPORT", 20, 20);
+    doc.text("DELIN ACADEMY - AUDIT REPORT", 20, 20);
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10);
     doc.text(`Class Mastery Index: ${Math.round(stats.avg)}%`, 20, 30);
@@ -141,7 +141,7 @@ export default function TeacherDashboard() {
       doc.text(`${i + 1}. ${s.studentName} - ${s.topic}: ${s.score || 0}/${s.maxMarks}`, 20, y);
       y += 10;
     });
-    doc.save("AGS_Performance_Report.pdf");
+    doc.save("Delin_Performance_Report.pdf");
   };
 
   const exportExcel = () => {
@@ -155,7 +155,7 @@ export default function TeacherDashboard() {
     const ws = XLSX.utils.json_to_sheet(data);
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, "Submissions");
-    XLSX.writeFile(wb, "AGS_Data_Export.xlsx");
+    XLSX.writeFile(wb, "Delin_Data_Export.xlsx");
   };
 
   return (
@@ -208,7 +208,7 @@ export default function TeacherDashboard() {
                     <tr key={sub.id} onClick={() => setSelectedSubmission(sub)} className="cursor-pointer hover:bg-white/50">
                       <td>{sub.studentName}</td>
                       <td className="editorial-meta text-xs lowercase italic opacity-60">{sub.topic}</td>
-                      <td><span className="editorial-badge bg-blue-100 text-blue-700">{sub.type}</span></td>
+                      <td><span className="editorial-badge bg-green-100 text-green-800">{sub.type}</span></td>
                       <td>
                         {sub.status === "Pending" ? (
                           <button 
@@ -299,7 +299,7 @@ export default function TeacherDashboard() {
                               <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 10, fontFamily: 'Inter' }} />
                               <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fontFamily: 'Inter' }} />
                               <Tooltip />
-                              <Bar dataKey="val" fill="#2563eb" />
+                              <Bar dataKey="val" fill="#1A4D2E" />
                            </BarChart>
                         </ResponsiveContainer>
                      </div>
@@ -340,7 +340,7 @@ export default function TeacherDashboard() {
                <div className="editorial-card">
                   <div className="editorial-section-title">User Manual (10-Page Summary)</div>
                   <div className="prose font-serif text-sm opacity-80 space-y-4">
-                     <p>1. <strong>Authentication</strong>: Users must authenticate via the Machakos Secure JWT portal. Account lockout active after 5 failed attempts.</p>
+                     <p>1. <strong>Authentication</strong>: Users must authenticate via the Delin Secure JWT portal. Account lockout active after 5 failed attempts.</p>
                      <p>2. <strong>Curriculum Alignment</strong>: Questions are tagged with topic and difficulty to ensure alignment with KNEC standards.</p>
                      <p>3. <strong>AI Essay Logic</strong>: The system evaluates coherence, vocabulary, and rubric alignment with at least 85% agreement.</p>
                   </div>

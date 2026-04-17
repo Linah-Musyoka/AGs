@@ -43,7 +43,7 @@ export function generateMockSubmissions(count: number): Submission[] {
       studentName: `Student ${i % 10}`,
       questionId: q.id,
       questionText: q.text,
-      answer: q.type === "MCQ" ? (Math.random() > 0.5 ? q.correctKey! : "A") : (q.type === "ShortAnswer" ? "Plants use leaves for photosynthesis." : "Global warming has led to unpredictable rainfall patterns in Kenya. This has caused massive crop failures in areas like Kitui and Machakos..."),
+      answer: q.type === "MCQ" ? (Math.random() > 0.5 ? q.correctKey! : "A") : (q.type === "ShortAnswer" ? "Plants use leaves for photosynthesis." : "Global warming has led to unpredictable rainfall patterns in Kenya. This has caused massive crop failures in areas like Kitui and surrounding counties..."),
       status: "Pending",
       maxMarks: q.maxMarks,
       type: q.type

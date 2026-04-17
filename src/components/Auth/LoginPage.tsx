@@ -51,9 +51,9 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
           <div className="absolute top-0 left-0 right-0 h-1 bg-paper-accent" />
           
           <div className="text-center mb-10">
-            <p className="editorial-meta text-paper-gray tracking-[0.2em] mb-4">Machakos District Portal</p>
-            <h1 className="editorial-h1 text-5xl">TextAGS</h1>
-            <p className="font-serif italic text-paper-gray mt-2 lowercase">Automated Grading System</p>
+            <p className="editorial-meta text-paper-gray tracking-[0.2em] mb-4">Delin Academy Portal</p>
+            <h1 className="editorial-h1 text-5xl">DELIN</h1>
+            <p className="font-serif italic text-paper-gray mt-2 lowercase">Premium Grading System</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8">
@@ -118,7 +118,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         </div>
         
         <p className="text-center editorial-meta text-paper-gray lowercase italic opacity-40 mt-8">
-          Compliant with Kenyan Data Protection Act • Machakos District Education Office
+          Compliant with Kenyan Data Protection Act • Delin Academy Administration
         </p>
       </motion.div>
     </div>

@@ -76,7 +76,7 @@ export default function StudentDashboard({ user }: StudentDashboardProps) {
                    return (
                      <div key={q.id} className={`editorial-card group relative transition-all ${alreadySubmitted ? 'opacity-50 grayscale pointer-events-none' : 'hover:border-paper-accent'}`}>
                         <div className="flex justify-between items-start mb-4">
-                           <span className="editorial-badge bg-blue-50 text-blue-600">{q.topic}</span>
+                           <span className="editorial-badge bg-green-50 text-green-700">{q.topic}</span>
                            <span className="editorial-meta text-[10px] uppercase font-bold tracking-tighter">{q.difficulty}</span>
                         </div>
                         <h3 className="font-serif text-xl mb-4">{q.text}</h3>

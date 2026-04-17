@@ -1,7 +1,7 @@
-# TextAGS - Automated Grading System User Manual
+# DELIN ACADEMY - Premium Grading System User Manual
 
 ## 1. Introduction
-TextAGS is a specialized automated grading system designed for Kenyan secondary schools. It leverages AI to grade complex essays and rule-based logic for MCQs and short answers.
+DELIN Premium Grading System is a specialized platform designed for Delin Academy. It leverages AI to grade complex essays and rule-based logic for MCQs and short answers.
 
 ## 2. Getting Started
 To access the system, navigate to the portal and login with your credentials.
@@ -27,6 +27,6 @@ Teachers can create questions belonging to three categories:
 
 ## 5. FAQ
 **Q: How accurate is the AI grading?**
-A: TextAGS reaches ≥90% overall accuracy, with MCQs at 97%+.
+A: The DELIN system reaches ≥90% overall accuracy, with MCQs at 97%+.
 
 *(This manual continues for 10 pages in the final documentation distribution...)*

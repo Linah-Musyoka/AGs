@@ -16,8 +16,8 @@ export function Layout({ children, user, onLogout }: LayoutProps) {
         {/* Header */}
         <header className="editorial-header">
           <div>
-            <p className="editorial-meta text-paper-accent">Machakos County • Education Department</p>
-            <h1 className="editorial-h1">Automated Grading System</h1>
+            <p className="editorial-meta text-paper-accent">Delin Academy • Academic Excellence</p>
+            <h1 className="editorial-h1">Premium Grading System</h1>
           </div>
           <div className="text-right flex flex-col items-end">
             <p className="editorial-meta">Logged in: {user.name} ({user.role})</p>

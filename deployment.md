@@ -1,4 +1,4 @@
-# Deployment Guide: TextAGS
+# Deployment Guide: DELIN Premium Grading System
 
 ## 1. Prerequisites
 - Node.js 20+

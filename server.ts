@@ -20,7 +20,7 @@ async function startServer() {
   // Mock Data Store
   const users = [
     { id: "1", username: "admin", password: "password123", role: "Admin", name: "System Administrator" },
-    { id: "2", username: "teacher1", password: "password123", role: "Teacher", name: "Mr. Kamau", school: "Machakos High" },
+    { id: "2", username: "teacher1", password: "password123", role: "Teacher", name: "Mr. Kamau", school: "Delin Academy" },
     { id: "3", username: "student1", password: "password123", role: "Student", name: "Ann Wambui", class: "Form 4B" },
   ];
 
@@ -130,7 +130,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`TextAGS Server running on http://localhost:${PORT}`);
+    console.log(`Delin Premium Grading Server running on http://localhost:${PORT}`);
   });
 }
 

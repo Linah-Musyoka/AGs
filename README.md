@@ -1,6 +1,6 @@
-# TextAGS - Automated Grading System
+# DELIN ACADEMY - Premium Grading System
 
-Professional automated grading system for Kenyan secondary schools (SIT 223 Programming Project).
+Professional automated grading system for Delin Academy (SIT 223 Programming Project).
 
 ## Objectives Met
 - **O1**: Functional deployed system with ≥90% accuracy.

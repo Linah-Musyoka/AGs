@@ -5,12 +5,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 /**
- * Accuracy Simulation Script for TextAGS
+ * Accuracy Simulation Script for DELIN ACADEMY
  * Objective: Verify ≥90% accuracy target on 500 submissions.
  */
 async function runAccuracyTest() {
   console.log("--------------------------------------------------");
-  console.log("TextAGS: Starting Automated Accuracy Verification");
+  console.log("DELIN: Starting Automated Accuracy Verification");
   console.log("Target Submissions: 500 (200 MCQ, 200 SA, 100 Essay)");
   console.log("--------------------------------------------------");
 

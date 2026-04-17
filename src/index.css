@@ -5,11 +5,11 @@
   --font-serif: "Cormorant Garamond", "Georgia", serif;
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
   
-  --color-paper-bg: #f8fafc;
-  --color-paper-ink: #0f172a;
-  --color-paper-accent: #2563eb;
-  --color-paper-gray: #64748b;
-  --color-paper-line: #e2e8f0;
+  --color-paper-bg: #FDF8F5;
+  --color-paper-ink: #1A4D2E;
+  --color-paper-accent: #8B5E3C;
+  --color-paper-gray: #5D5447;
+  --color-paper-line: #D4C4B5;
 }
 
 @layer base {

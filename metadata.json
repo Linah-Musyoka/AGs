@@ -1,6 +1,6 @@
 {
-  "name": "AGS Machakos - Automated Grading System",
-  "description": "High-accuracy automated grading system for Machakos District, featuring AI essay assessment, curriculum alignment, and teacher workload reduction.",
+  "name": "DELIN ACADEMY - Automated Grading System",
+  "description": "Premium automated grading and academic analytics platform for Delin Academy, featuring AI essay assessment and KNEC-aligned curriculum tracking.",
   "requestFramePermissions": [],
   "majorCapabilities": ["AI Grading", "Dashboard Analytics", "PDF Reports", "Role-Based Access"]
 }
